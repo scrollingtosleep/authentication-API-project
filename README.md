@@ -1,6 +1,5 @@
-# authentication-API-project
-Voosh - Back-end Engineer Project
 # Enhanced Authentication API
+Voosh - Back-end Engineer Project
 
 This project is an enhanced backend API for an authentication system built using Node.js. It includes features like allowing users to set their profiles as public or private, and providing admin users the ability to view both public and private user profiles, while normal users can only access public profiles.
 
