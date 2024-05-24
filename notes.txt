@@ -18,3 +18,24 @@ The login route now uses Passport.js for authentication. It checks the user's cr
 The logout route is included for logging out the user, and you can implement the logout functionality as needed.
 
 https://www.passportjs.org/docs/
+
+app.post('/login', (req, res) => {
+  const user = {
+    id: 1,
+    username: 'shivam',
+    email: 'shivam@gmail.com'
+  };
+  jwt.sign({ user }, secretKey, { expiresIn: '300s' }, (err, token) => {
+    res.json({
+      token
+    });
+  });
+});
+
+These modified files implement the user registration, login, logout, profile retrieval, and profile editing functionality with the option to set profiles as public or private. Here's a breakdown of the changes:
+The User model has been updated with the necessary fields, including photo, bio, phone, isPublic, and role.
+The authController has been modified to handle user registration, login, logout, profile retrieval, and profile editing.
+The authRoutes have been updated with new routes for profile retrieval and editing, and the authenticate middleware is used to protect these routes.
+The authMiddleware has been added to verify and decode the JWT token for authentication purposes.
+The app.js file remains the same, with the updated authRoutes being used.
+Remember to implement proper error handling, validation, and security measures throughout the development process. Also, ensure that you have the necessary dependencies installed and the required environment variables set, such as the JWT_SECRET.
