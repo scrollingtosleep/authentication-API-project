@@ -1,0 +1,20 @@
+npm install express mongoose bcrypt jsonwebtoken multer
+
+Let's break it down:
+express: A fast, unopinionated, minimalist web framework for Node.js. It provides a robust set of features for web and mobile applications.
+mongoose: An Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a higher-level abstraction on top of MongoDB to simplify working with the database.
+bcrypt: A library to help hash passwords. It's used for securely storing passwords in the database.
+jsonwebtoken: A library for generating and verifying JSON Web Tokens (JWT). It's used for authentication and authorization in web applications.
+multer: A middleware for handling multipart/form-data, which is primarily used for uploading files. It's needed for handling user profile photo uploads.
+
+
+This starting code provides a basic structure for the authentication API project. It includes the main entry point (app.js), routes for authentication (authRoutes.js), and a user model (User.js). You can build upon this foundation to implement the required features and functionality.
+Remember to install the necessary dependencies (express, mongoose, bcrypt, jsonwebtoken, multer) and configure the MongoDB connection in the db.js file.
+As you progress, you'll need to create additional routes, controllers, and middleware for profile management and admin functionality. Refer to the user stories and requirements to guide your implementation.
+
+In this modified authRoutes.js file:
+The registration logic remains the same, where a new user is registered and their password is hashed before saving to the database.
+The login route now uses Passport.js for authentication. It checks the user's credentials, generates a JWT token upon successful login, and returns it to the client.
+The logout route is included for logging out the user, and you can implement the logout functionality as needed.
+
+https://www.passportjs.org/docs/
