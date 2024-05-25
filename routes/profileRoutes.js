@@ -7,3 +7,4 @@ router.get('/', authenticate, profileController.getPublicProfiles);
 router.get('/:id', authenticate, profileController.getProfile);
 
 module.exports = router;
+ 
