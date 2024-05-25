@@ -39,3 +39,7 @@ The authRoutes have been updated with new routes for profile retrieval and editi
 The authMiddleware has been added to verify and decode the JWT token for authentication purposes.
 The app.js file remains the same, with the updated authRoutes being used.
 Remember to implement proper error handling, validation, and security measures throughout the development process. Also, ensure that you have the necessary dependencies installed and the required environment variables set, such as the JWT_SECRET.
+
+If the logout is successful, you will receive a JSON response with a success message.
+By implementing this functionality, users can log out of your application and invalidate their JWT token, ensuring that it can no longer be used for subsequent requests.
+Note: In a real-world scenario, you may want to implement additional security measures, such as storing and invalidating tokens on the server-side to prevent token reuse or revocation.
