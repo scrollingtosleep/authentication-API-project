@@ -47,9 +47,9 @@ npm start
 
 The API will be available at `http://localhost:3000`.
 
-## API Documentation
+## API Testing Screenshots and Documentation
 
-The API documentation is available at [https://documenter.getpostman.com/view/your-postman-id/enhanced-auth-api](https://documenter.getpostman.com/view/your-postman-id/enhanced-auth-api).
+The API documentation is available at [https://docs.google.com/document/d/1bIK0D-H7fL9jm-eVCJUPl3Y-m1xoMqziY9OLtiNleDs/edit?usp=sharing)](https://docs.google.com/document/d/1bIK0D-H7fL9jm-eVCJUPl3Y-m1xoMqziY9OLtiNleDs/edit?usp=sharing).
 
 You can also use the Swagger UI to interact with the API endpoints:
 
